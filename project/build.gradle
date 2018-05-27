@@ -1,14 +1,8 @@
 apply plugin: 'java'
+apply plugin: 'my-repo'
 repositories {
-    ivy {
-        url "file:/${rootProject.projectDir}/../repo"
-        layout 'pattern', {
-            artifact "[organisation]/[module]/[revision]/lib/[artifact].[ext]"
-            ivy "[organisation]/[module]/[revision]/etc/ivy.xml"
-        }
-    }
+    myRepo()
 }
-println repositories.ivy.url
 dependencies {
-    compile "someOrganization:someModule:1.x:runtime"
+    compile group: 'someOrganization', name: 'someModule', version: '1.x', configuration: 'runtime'
 }
