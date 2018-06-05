@@ -26,7 +26,6 @@ class CustomRepoPlugin implements Plugin<Project> {
                 ivy "[organisation]/[module]/[revision]/etc/ivy.xml"
             }
         }
-        myRepo.resolve
 
         return myRepo
     }

@@ -1,4 +1,4 @@
 package custom.repo;
 
-public class CustomIvyArtifactRepositoryMetaDataProvider im {
+public class CustomIvyArtifactRepositoryMetaDataProvider {
 }

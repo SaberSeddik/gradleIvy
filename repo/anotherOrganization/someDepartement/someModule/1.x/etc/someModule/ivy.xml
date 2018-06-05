@@ -1,0 +1,9 @@
+<ivy-module version="1.3">
+    <info organisation="anotherOrganization.someDepartement" module="someModule" revision="1.x"/>
+    <configurations>
+      <conf name="runtime" description="Runtime configuration."/>
+    </configurations>
+    <publications>
+      <artifact name="someModule-1.x" type="jar" conf="runtime" ext="jar"/>     
+    </publications>
+</ivy-module>

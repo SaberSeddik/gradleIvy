@@ -5,4 +5,5 @@ repositories {
 }
 dependencies {
     compile group: 'someOrganization', name: 'someModule', version: '1.x', configuration: 'runtime'
+    compile group: 'anotherOrganization.someDepartement', name: 'someModule', version: '1.x', configuration: 'runtime'
 }
